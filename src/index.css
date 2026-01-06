@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Royal Heritage Theme - Muktira */
+    --background: 39 100% 97%; /* Soft Ivory #FFFAF0 */
+    --foreground: 0 0% 15%; /* Dark Charcoal */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 40 52% 56%; /* Antique Gold #C5A059 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 345 100% 25%; /* Deep Maroon #800020 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 39 30% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 40 52% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 30% 85%;
+    --input: 40 30% 85%;
+    --ring: 40 52% 56%;
+
+    --radius: 0.5rem;
+
+    /* Custom Muktira tokens */
+    --gold: 40 52% 56%;
+    --gold-light: 40 60% 75%;
+    --gold-dark: 40 52% 40%;
+    --maroon: 345 100% 25%;
+    --ivory: 39 100% 97%;
+    --ivory-dark: 39 50% 94%;
+    --charcoal: 0 0% 15%;
+    --charcoal-light: 0 0% 35%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(40 52% 56%), hsl(40 60% 70%));
+    --gradient-maroon: linear-gradient(135deg, hsl(345 100% 25%), hsl(345 80% 35%));
+    --gradient-hero: linear-gradient(to right, hsl(0 0% 0% / 0.6), hsl(0 0% 0% / 0.3));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(40 52% 56% / 0.15);
+    --shadow-card-hover: 0 12px 30px -8px hsl(40 52% 56% / 0.25);
+    --shadow-button: 0 4px 14px -2px hsl(40 52% 56% / 0.4);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 39 100% 97%;
+    --card: 0 0% 12%;
+    --card-foreground: 39 100% 97%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 39 100% 97%;
+    --primary: 40 52% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 345 100% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 40 52% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 40 52% 56%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(40 52% 56%), hsl(40 70% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, hsl(40 52% 56%), hsl(40 60% 70%));
+  }
+
+  .bg-gradient-maroon {
+    background: linear-gradient(135deg, hsl(345 100% 25%), hsl(345 80% 35%));
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 20px -4px hsl(40 52% 56% / 0.25);
+  }
+
+  .shadow-gold-lg {
+    box-shadow: 0 12px 30px -8px hsl(40 52% 56% / 0.3);
+  }
+
+  .glass-navbar {
+    background: hsl(var(--background) / 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid hsl(var(--gold) / 0.2);
+    box-shadow: 
+      0 4px 30px hsl(0 0% 0% / 0.1),
+      inset 0 1px 0 hsl(var(--gold-light) / 0.2);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--ivory-dark));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold-dark));
+}
