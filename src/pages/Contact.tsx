@@ -19,10 +19,10 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     toast.success('Thank you for your message! We\'ll get back to you soon.');
     setFormData({ name: '', email: '', phone: '', message: '' });
     setIsSubmitting(false);
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="Enter your phone number"
                         className="h-12"
                       />
                     </div>
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="you@example.com"
+                      placeholder="Enter your email"
                       required
                       className="h-12"
                     />
@@ -149,7 +149,7 @@ const Contact: React.FC = () => {
                     Contact Information
                   </h2>
                   <p className="font-body text-muted-foreground">
-                    We're here to help with any questions about our collection, 
+                    We're here to help with any questions about our collection,
                     custom orders, or jewelry care advice.
                   </p>
                 </div>
@@ -159,19 +159,19 @@ const Contact: React.FC = () => {
                     {
                       icon: Phone,
                       title: 'Phone',
-                      content: '+91 98765 43210',
-                      href: 'tel:+919876543210',
+                      content: '+91 99465 82510',
+                      href: 'tel:+919946582510',
                     },
                     {
                       icon: Mail,
                       title: 'Email',
-                      content: 'hello@muktira.com',
-                      href: 'mailto:hello@muktira.com',
+                      content: 'muktira.store@gmail.com',
+                      href: 'mailto:muktira.store@gmail.com',
                     },
                     {
                       icon: MapPin,
                       title: 'Address',
-                      content: '123 Jewel Street, Mumbai, Maharashtra 400001',
+                      content: '123 Jewel Street, Alappuzha, Kerala 690558',
                     },
                     {
                       icon: Clock,
