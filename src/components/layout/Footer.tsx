@@ -42,22 +42,22 @@ const Footer: React.FC = () => {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+91 99465 82510"
                 className="flex items-center gap-3 text-ivory/70 hover:text-primary transition-colors text-sm"
               >
                 <Phone className="h-4 w-4" />
-                +91 98765 43210
+                +919946582510
               </a>
               <a
-                href="mailto:hello@muktira.com"
+                href="mailto:muktira.store@gmail.com"
                 className="flex items-center gap-3 text-ivory/70 hover:text-primary transition-colors text-sm"
               >
                 <Mail className="h-4 w-4" />
-                hello@muktira.com
+                muktira.store@gmail.com
               </a>
               <div className="flex items-start gap-3 text-ivory/70 text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>123 Jewel Street, Mumbai, Maharashtra 400001</span>
+                <span>123 Jewel Street, Alappuzha, Kerala 690558</span>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/muktira.store/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-primary hover:text-charcoal transition-all duration-300"
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/9946582510"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-primary hover:text-charcoal transition-all duration-300"
