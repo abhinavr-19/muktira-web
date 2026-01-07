@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       {/* Decorative Elements */}
       <div className="absolute top-1/4 left-10 w-32 h-32 border border-primary/20 rounded-full animate-float" />
       <div className="absolute bottom-1/4 right-10 w-48 h-48 border border-primary/10 rounded-full animate-float" style={{ animationDelay: '1s' }} />
-      
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32">
         <div className="max-w-2xl space-y-8">
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
 
           {/* Description */}
           <p className="font-body text-lg md:text-xl text-ivory/80 leading-relaxed max-w-lg animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Discover our exquisite collection of handcrafted imitation jewelry, 
+            Discover our exquisite collection of handcrafted imitation jewelry,
             where tradition meets contemporary design.
           </p>
 
