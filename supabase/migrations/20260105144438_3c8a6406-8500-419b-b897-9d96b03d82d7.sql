@@ -1,4 +1,4 @@
--- Fix function search path for update_profile_updated_at
+--- Fix function search path for update_profile_updated_at
 CREATE OR REPLACE FUNCTION public.update_profile_updated_at()
 RETURNS TRIGGER
 LANGUAGE plpgsql
