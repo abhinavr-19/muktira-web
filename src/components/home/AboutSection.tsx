@@ -66,33 +66,3 @@ const AboutSection: React.FC = () => {
                 contemporary designs to create pieces that are both timeless and trendy.
               </p>
             </div>
-
-            {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-6 pt-4">
-              {features.map((feature, index) => (
-                <div
-                  key={feature.title}
-                  className="flex gap-4 p-4 bg-card rounded-lg hover:shadow-gold transition-shadow duration-300"
-                >
-                  <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <feature.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-foreground">
-                      {feature.title}
-                    </h4>
-                    <p className="font-body text-sm text-muted-foreground mt-1">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default AboutSection;
