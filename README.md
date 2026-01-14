@@ -2,13 +2,7 @@
 
 Muktira is a premium jewelry collection website showcasing exquisite designs and custom orders. This project is built with a modern technology stack to ensure a seamless, responsive, and visually stunning user experience.
 
-## ✨ Features
 
-- **Premium Design**: A "Dark Luxury" aesthetic with smooth animations and a refined color palette.
-- **Responsive Layout**: Fully responsive interface that works perfectly across desktop and mobile devices.
-- **Product Showcase**: elegant galleries and carousels to display jewelry collections.
-- **Contact & Inquiry**: Integrated contact form and location details for customer support.
-- **Modern Stack**: Built with React, TypeScript, and Tailwind CSS for high performance.
 
 ## 🛠️ Technology Stack
 
